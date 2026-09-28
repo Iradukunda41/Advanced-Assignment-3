@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="Hillside Coffee: small-batch coffees, built with HTML and CSS only." />
+     <title>Hillside Coffee</title>
+     <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="intro-page">
+     <a class="skip-link" href="#main">Skip to main content</a>
+     <header class="intro-header">
+          <div class="wrap">
+               <p class="brand">Hillside Coffee</p>
+               <nav class="intro-nav" aria-label="Main navigation">
+                    <a href="index.html" aria-current="page">Home</a><a href="dashboard.html">Dashboard</a><a
+                         href="products.html">Products</a><a href="order.html">Order</a><a href="docs.html">Docs</a>
+               </nav>
+          </div>
+     </header>
+     <main id="main">
+          <section class="hero">
+               <div class="wrap">
+                    <h1>Six coffees, roasted this week.</h1>
+                    <p>Small-batch beans from single farms. Pick a roast, place an order, and we ship the day after
+                         roasting.</p>
+                    <div class="hero-actions"><a class="btn btn-solid" href="products.html">Browse products</a><a
+                              class="btn" href="dashboard.html">Enter the dashboard</a></div>
+               </div>
+          </section>
+          <section class="band">
+               <div class="wrap">
+                    <h2>What's inside</h2>
+                    <p>Four pages sit behind the dashboard layout, plus this introduction.</p>
+                    <div class="intro-grid">
+                         <a class="intro-card" href="dashboard.html">
+                              <h3>Dashboard</h3>
+                              <p>Stats and best sellers in the shared layout.</p><span class="go">Open the dashboard
+                                   →</span>
+                         </a>
+                         <a class="intro-card" href="products.html">
+                              <h3>Products</h3>
+                              <p>All six coffees in a responsive grid.</p><span class="go">See the coffees →</span>
+                         </a>
+                         <a class="intro-card" href="order.html">
+                              <h3>Order</h3>
+                              <p>A validated form with select, radio group and notes.</p><span class="go">Place an order
+                                   →</span>
+                         </a>
+                         <a class="intro-card" href="docs.html">
+                              <h3>Documentation</h3>
+                              <p>How the layout, styles and breakpoints work.</p><span class="go">Read the docs →</span>
+                         </a>
+                    </div>
+               </div>
+          </section>
+          <section class="band band-tint">
+               <div class="wrap">
+                    <h2>How it is built</h2>
+                    <ol class="steps">
+                         <li><b>One layout, reused everywhere</b><span>A grid with six named areas is declared once, and
+                                   every page fills the same slots.</span></li>
+                         <li><b>One stylesheet</b><span><code>css/styles.css</code> holds the tokens, shell, panels,
+                                   form, intro page and breakpoints.</span></li>
+                         <li><b>Responsive by reflow</b><span>Panels move at 1180px and 860px. Nothing is hidden on
+                                   small screens.</span></li>
+                    </ol>
+               </div>
+          </section>
+     </main>
+     <footer class="intro-footer">
+          <div class="wrap">
+               <p>© 2026 Hillside Coffee · Built by hand with HTML and CSS.</p>
+               <nav aria-label="Footer navigation"><a href="dashboard.html">Dashboard</a><a
+                         href="products.html">Products</a><a href="order.html">Order</a><a href="docs.html">Docs</a>
+               </nav>
+          </div>
+     </footer>
+</body>
+
+</html>

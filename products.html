@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="Hillside Coffee product showcase built with HTML and CSS only." />
+     <title>Products · Hillside Coffee</title>
+     <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+     <a class="skip-link" href="#main">Skip to main content</a>
+     <div class="app">
+          <aside class="sidebar">
+               <p class="brand">Hillside Coffee<span>Product showcase</span></p>
+               <p class="nav-label">Navigation</p>
+               <nav class="side-nav" aria-label="Main navigation">
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="dashboard.html">Dashboard</a></li>
+                         <li><a href="products.html" aria-current="page">Products</a></li>
+                         <li><a href="order.html">Order</a></li>
+                         <li><a href="docs.html">Documentation</a></li>
+                    </ul>
+               </nav>
+               <p class="side-note">Every page reuses one grid layout with named areas.</p>
+          </aside>
+          <header class="topbar">
+               <div>
+                    <h1>Products</h1>
+                    <p class="crumbs"><a href="index.html">Home</a> · Shop · Products</p>
+               </div>
+               <div class="topbar-actions"><a class="btn" href="products.html">All products</a><a class="btn btn-solid"
+                         href="order.html">Order now</a></div>
+          </header>
+          <main class="main panel" id="main">
+               <h2>All coffees</h2>
+               <p class="lede">Every bag is 250 g of whole beans. Cards rewrap on their own with an auto-fit grid, so no
+                    media query is needed.</p>
+               <div class="chips" aria-label="Roast levels"><a href="#light">Light</a><a href="#medium">Medium</a><a
+                         href="#dark">Dark</a></div>
+               <section>
+                    <div class="cards">
+                         <article class="card">
+                              <div class="thumb medium" role="img" aria-label="Medium roast"></div>
+                              <div class="card-body">
+                                   <h3>Morning Ridge</h3>
+                                   <p>Medium roast. Cocoa and orange.</p>
+                                   <div class="price-row"><span>$14</span><a href="order.html">Order</a></div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <div class="thumb light" role="img" aria-label="Light roast"></div>
+                              <div class="card-body">
+                                   <h3>Lake Blossom</h3>
+                                   <p>Light roast. Jasmine and lemon.</p>
+                                   <div class="price-row"><span>$16</span><a href="order.html">Order</a></div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <div class="thumb dark" role="img" aria-label="Dark roast"></div>
+                              <div class="card-body">
+                                   <h3>Night Shift</h3>
+                                   <p>Dark roast. Molasses and smoke.</p>
+                                   <div class="price-row"><span>$13</span><a href="order.html">Order</a></div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <div class="thumb light" role="img" aria-label="Light roast"></div>
+                              <div class="card-body">
+                                   <h3>Green Tea Farm</h3>
+                                   <p>Light roast. Honey and green apple.</p>
+                                   <div class="price-row"><span>$17</span><a href="order.html">Order</a></div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <div class="thumb medium" role="img" aria-label="Medium roast"></div>
+                              <div class="card-body">
+                                   <h3>Red Soil</h3>
+                                   <p>Medium roast. Caramel and plum.</p>
+                                   <div class="price-row"><span>$15</span><a href="order.html">Order</a></div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <div class="thumb dark" role="img" aria-label="Dark roast"></div>
+                              <div class="card-body">
+                                   <h3>Deep Forest</h3>
+                                   <p>Dark roast. Dark chocolate and cedar.</p>
+                                   <div class="price-row"><span>$14</span><a href="order.html">Order</a></div>
+                              </div>
+                         </article>
+                    </div>
+                    <div class="note"><strong>How the grid works.</strong>
+                         <code>repeat(auto-fit, minmax(230px, 1fr))</code> fits as many 230px columns as the space
+                         allows.</div>
+               </section>
+          </main>
+          <section class="history">
+               <h2>Recently viewed</h2>
+               <ol>
+                    <li><strong>Morning Ridge</strong><span>Medium roast</span></li>
+                    <li><strong>Lake Blossom</strong><span>Light roast</span></li>
+                    <li><strong>Night Shift</strong><span>Dark roast</span></li>
+                    <li><strong>Red Soil</strong><span>Medium roast</span></li>
+               </ol>
+          </section>
+          <section class="profiles">
+               <h2>Customer reviews</h2>
+               <ul class="avatars">
+                    <li><span class="avatar" aria-hidden="true">AK</span><span><b>Alice K.</b><span>Love the citrus
+                                   notes</span></span></li>
+                    <li><span class="avatar avatar-2" aria-hidden="true">JB</span><span><b>Jean B.</b><span>Great for
+                                   espresso</span></span></li>
+                    <li><span class="avatar avatar-3" aria-hidden="true">SN</span><span><b>Sam N.</b><span>Fast
+                                   delivery</span></span></li>
+                    <li><span class="avatar avatar-4" aria-hidden="true">MU</span><span><b>Mia U.</b><span>My daily
+                                   cup</span></span></li>
+               </ul>
+          </section>
+          <section class="userinfo">
+               <h2>Roastery information</h2>
+               <dl>
+                    <dt>Roast day</dt>
+                    <dd>Monday</dd>
+                    <dt>Shipping</dt>
+                    <dd>Next day</dd>
+                    <dt>Bag size</dt>
+                    <dd>250 g</dd>
+                    <dt>Products</dt>
+                    <dd>6 coffees</dd>
+               </dl>
+          </section>
+          <footer class="footer">
+               <p>© 2026 Hillside Coffee · Built by hand with HTML and CSS.</p>
+               <nav aria-label="Footer navigation">
+                    <a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a
+                         href="products.html">Products</a><a href="order.html">Order</a><a
+                         href="docs.html">Documentation</a>
+               </nav>
+          </footer>
+     </div>
+</body>
+
+</html>

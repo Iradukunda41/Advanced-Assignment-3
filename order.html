@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="Hillside Coffee product showcase built with HTML and CSS only." />
+     <title>Order · Hillside Coffee</title>
+     <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+     <a class="skip-link" href="#main">Skip to main content</a>
+     <div class="app">
+          <aside class="sidebar">
+               <p class="brand">Hillside Coffee<span>Product showcase</span></p>
+               <p class="nav-label">Navigation</p>
+               <nav class="side-nav" aria-label="Main navigation">
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="dashboard.html">Dashboard</a></li>
+                         <li><a href="products.html">Products</a></li>
+                         <li><a href="order.html" aria-current="page">Order</a></li>
+                         <li><a href="docs.html">Documentation</a></li>
+                    </ul>
+               </nav>
+               <p class="side-note">Every page reuses one grid layout with named areas.</p>
+          </aside>
+          <header class="topbar">
+               <div>
+                    <h1>Order</h1>
+                    <p class="crumbs"><a href="index.html">Home</a> · Forms · Order</p>
+               </div>
+               <div class="topbar-actions"><a class="btn" href="products.html">← Products</a><a class="btn btn-solid"
+                         href="dashboard.html">Dashboard</a></div>
+          </header>
+          <main class="main panel" id="main">
+               <h2>Place an order</h2>
+               <p class="lede">Each field is tied to its label with matching <code>for</code> and <code>id</code>
+                    attributes, and the browser validates it.</p>
+               <form action="#" method="POST" class="form-container">
+                    <div class="form-row">
+                         <div class="form-group"><label for="full-name">Full name</label><input type="text"
+                                   id="full-name" name="full-name" autocomplete="name" required /></div>
+                         <div class="form-group"><label for="email">Email</label><input type="email" id="email"
+                                   name="email" autocomplete="email" required /></div>
+                    </div>
+                    <div class="form-row">
+                         <div class="form-group"><label for="product">Product</label>
+                              <select id="product" name="product" required>
+                                   <option value="">Select a coffee</option>
+                                   <option>Morning Ridge</option>
+                                   <option>Lake Blossom</option>
+                                   <option>Night Shift</option>
+                                   <option>Green Tea Farm</option>
+                                   <option>Red Soil</option>
+                                   <option>Deep Forest</option>
+                              </select>
+                         </div>
+                         <div class="form-group"><label for="qty">Number of bags</label><input type="number" id="qty"
+                                   name="qty" min="1" max="20" value="1" required /></div>
+                    </div>
+                    <div class="form-group">
+                         <fieldset>
+                              <legend>Grind</legend>
+                              <div class="radio-row">
+                                   <label for="g-whole"><input type="radio" id="g-whole" name="grind" value="whole"
+                                             checked /> Whole beans</label>
+                                   <label for="g-filter"><input type="radio" id="g-filter" name="grind"
+                                             value="filter" /> Filter</label>
+                                   <label for="g-espresso"><input type="radio" id="g-espresso" name="grind"
+                                             value="espresso" /> Espresso</label>
+                              </div>
+                         </fieldset>
+                    </div>
+                    <div class="form-group"><label for="message">Notes</label><textarea id="message" name="message"
+                              rows="4" placeholder="Delivery instructions..."></textarea></div>
+                    <div class="form-btn"><button type="submit">Send order</button><button type="reset">Reset
+                              form</button></div>
+               </form>
+          </main>
+          <section class="history">
+               <h2>Recently viewed</h2>
+               <ol>
+                    <li><strong>Morning Ridge</strong><span>Medium roast</span></li>
+                    <li><strong>Lake Blossom</strong><span>Light roast</span></li>
+                    <li><strong>Night Shift</strong><span>Dark roast</span></li>
+                    <li><strong>Red Soil</strong><span>Medium roast</span></li>
+               </ol>
+          </section>
+          <section class="profiles">
+               <h2>Customer reviews</h2>
+               <ul class="avatars">
+                    <li><span class="avatar" aria-hidden="true">AK</span><span><b>Alice K.</b><span>Love the citrus
+                                   notes</span></span></li>
+                    <li><span class="avatar avatar-2" aria-hidden="true">JB</span><span><b>Jean B.</b><span>Great for
+                                   espresso</span></span></li>
+                    <li><span class="avatar avatar-3" aria-hidden="true">SN</span><span><b>Sam N.</b><span>Fast
+                                   delivery</span></span></li>
+                    <li><span class="avatar avatar-4" aria-hidden="true">MU</span><span><b>Mia U.</b><span>My daily
+                                   cup</span></span></li>
+               </ul>
+          </section>
+          <section class="userinfo">
+               <h2>Roastery information</h2>
+               <dl>
+                    <dt>Roast day</dt>
+                    <dd>Monday</dd>
+                    <dt>Shipping</dt>
+                    <dd>Next day</dd>
+                    <dt>Bag size</dt>
+                    <dd>250 g</dd>
+                    <dt>Products</dt>
+                    <dd>6 coffees</dd>
+               </dl>
+          </section>
+          <footer class="footer">
+               <p>© 2026 Hillside Coffee · Built by hand with HTML and CSS.</p>
+               <nav aria-label="Footer navigation">
+                    <a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a
+                         href="products.html">Products</a><a href="order.html">Order</a><a
+                         href="docs.html">Documentation</a>
+               </nav>
+          </footer>
+     </div>
+</body>
+
+</html>

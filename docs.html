@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="Hillside Coffee product showcase built with HTML and CSS only." />
+     <title>Documentation · Hillside Coffee</title>
+     <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+     <a class="skip-link" href="#main">Skip to main content</a>
+     <div class="app">
+          <aside class="sidebar">
+               <p class="brand">Hillside Coffee<span>Product showcase</span></p>
+               <p class="nav-label">Navigation</p>
+               <nav class="side-nav" aria-label="Main navigation">
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="dashboard.html">Dashboard</a></li>
+                         <li><a href="products.html">Products</a></li>
+                         <li><a href="order.html">Order</a></li>
+                         <li><a href="docs.html" aria-current="page">Documentation</a></li>
+                    </ul>
+               </nav>
+               <p class="side-note">Every page reuses one grid layout with named areas.</p>
+          </aside>
+          <header class="topbar">
+               <div>
+                    <h1>Documentation</h1>
+                    <p class="crumbs"><a href="index.html">Home</a> · Documentation</p>
+               </div>
+               <div class="topbar-actions"><a class="btn" href="index.html">← Intro page</a><a class="btn btn-solid"
+                         href="dashboard.html">Dashboard</a></div>
+          </header>
+          <main class="main panel" id="main">
+               <h2>How this website works</h2>
+               <p class="lede">Every file, the layout grid and the breakpoints, in one place.</p>
+               <section>
+                    <h2>Files</h2>
+                    <pre><code>showcase/
+├── index.html       intro page (no dashboard shell)
+├── dashboard.html   overview
+├── products.html    product grid
+├── order.html       order form
+├── docs.html        this page
+└── css/styles.css   the one stylesheet</code></pre>
+                    <div class="note"><strong>Relative path.</strong> Pages link <code>css/styles.css</code>, not
+                         <code>/css/styles.css</code>, so they also work when opened straight from disk.</div>
+               </section>
+               <section>
+                    <h2>The layout grid</h2>
+                    <p>Only <code>.app</code> defines the layout. Every other block says which area it belongs in.</p>
+                    <pre><code>.app {
+  display: grid;
+  grid-template-areas:
+    "side nav  nav  nav"
+    "side main main hist"
+    "side prof prof user"
+    "side foot foot foot";
+}</code></pre>
+               </section>
+               <section>
+                    <h2>Breakpoints</h2>
+                    <p>Above 1180px: four columns. Up to 1180px: the history panel drops below the main panel. Up to
+                         860px: one column, and the sidebar becomes a scrollable strip. Nothing is hidden, it only
+                         reflows.</p>
+               </section>
+               <section>
+                    <h2>Adding a product</h2>
+                    <p>Copy one <code>.card</code> in <code>products.html</code>, change the name, description and
+                         price, and use <code>light</code>, <code>medium</code> or <code>dark</code> on the thumbnail.
+                    </p>
+               </section>
+          </main>
+          <section class="history">
+               <h2>Recently viewed</h2>
+               <ol>
+                    <li><strong>Morning Ridge</strong><span>Medium roast</span></li>
+                    <li><strong>Lake Blossom</strong><span>Light roast</span></li>
+                    <li><strong>Night Shift</strong><span>Dark roast</span></li>
+                    <li><strong>Red Soil</strong><span>Medium roast</span></li>
+               </ol>
+          </section>
+          <section class="profiles">
+               <h2>Customer reviews</h2>
+               <ul class="avatars">
+                    <li><span class="avatar" aria-hidden="true">AK</span><span><b>Alice K.</b><span>Love the citrus
+                                   notes</span></span></li>
+                    <li><span class="avatar avatar-2" aria-hidden="true">JB</span><span><b>Jean B.</b><span>Great for
+                                   espresso</span></span></li>
+                    <li><span class="avatar avatar-3" aria-hidden="true">SN</span><span><b>Sam N.</b><span>Fast
+                                   delivery</span></span></li>
+                    <li><span class="avatar avatar-4" aria-hidden="true">MU</span><span><b>Mia U.</b><span>My daily
+                                   cup</span></span></li>
+               </ul>
+          </section>
+          <section class="userinfo">
+               <h2>Roastery information</h2>
+               <dl>
+                    <dt>Roast day</dt>
+                    <dd>Monday</dd>
+                    <dt>Shipping</dt>
+                    <dd>Next day</dd>
+                    <dt>Bag size</dt>
+                    <dd>250 g</dd>
+                    <dt>Products</dt>
+                    <dd>6 coffees</dd>
+               </dl>
+          </section>
+          <footer class="footer">
+               <p>© 2026 Hillside Coffee · Built by hand with HTML and CSS.</p>
+               <nav aria-label="Footer navigation">
+                    <a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a
+                         href="products.html">Products</a><a href="order.html">Order</a><a
+                         href="docs.html">Documentation</a>
+               </nav>
+          </footer>
+     </div>
+</body>
+
+</html>
